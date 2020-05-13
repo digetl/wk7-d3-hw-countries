@@ -24,7 +24,7 @@ export default {
       .then(result => result.json())
       .then(countries => (this.countries = countries));
 
-    eventBus.$on("coutry-selected", country => {
+    eventBus.$on("country-selected", country => {
       this.selectedCountry = country
     });
   },
